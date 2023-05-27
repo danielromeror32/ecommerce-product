@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="container-logo">
+        <a href="#"><img src="./public/images/logo.svg" alt="logo" /></a>
+      </div>
+      <div class="nav-sections">
+        <ul class="sections">
+          <li><a class="sections" href="#">Collections</a></li>
+          <li><a class="sections" href="#">Men</a></li>
+          <li><a class="sections" href="#">Women</a></li>
+          <li><a class="sections" href="#">About</a></li>
+          <li><a class="sections" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-perfil">
+        <div class="container-car" type="button">
+          <img src="./public/images/icon-cart.svg" alt="icon-car" />
+        </div>
+        <div type="button" class="container-perfil">
+          <img
+            id="img-perfil"
+            src="./public/images/image-avatar.png"
+            alt="img-perfil"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="product-presentation">
+        <img
+          class="img-product"
+          src="./public/images/image-product-1.jpg"
+          alt=""
+        />
+      </div>
+      <div class="product-description">
+        <div class="text-description">
+          <p class="text-contrast">SNEKERS COMPANY</p>
+          <h1 id="title">Fall Limited Edition Sneakers</h1>
+          <p class="text-light">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="prices">
+          <h1>$125.00</h1>
+          <dir></dir>
+          <p id="discount" class="text-contrast">50%</p>
+        </div>
+        <p class="before-price text-light">$250.00</p>
+      </div>
+    </div>
+    $125.00 50% $250.00 0 Add to cart
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
