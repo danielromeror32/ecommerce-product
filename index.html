@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="./public/css/styles.css" />
   </head>
   <body>
-    <!-- <div class="nav-bar">
+    <div class="nav-bar">
       <div class="container-logo">
         <a href="#"><img src="./public/images/logo.svg" alt="logo" /></a>
       </div>
-      <div class="nav-sections">
+      <div class="nav-sections" id="nav">
         <ul class="sections">
           <li><a class="sections" href="#">Collections</a></li>
           <li><a class="sections" href="#">Men</a></li>
@@ -47,7 +47,7 @@
           />
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="main-container">
       <div class="test product-presentation">
         <img
@@ -67,42 +67,62 @@
           </p>
         </div>
         <div class="prices">
-          <h1 id="price" >$125.00</h1>
+          <h1 id="price">$125.00</h1>
           <p id="discount" class="text-contrast">50%</p>
           <p class="before-price text-light">$250.00</p>
         </div>
       </div>
-      <div class=" product-previews">
+      <div class="test product-previews">
         <div class="preview">
-          <img class="img-product-preview" src="./public/images/image-product-1-thumbnail.jpg" alt="product-preview">
+          <img
+            class="img-product-preview"
+            src="./public/images/image-product-1-thumbnail.jpg"
+            alt="product-preview"
+          />
         </div>
         <div class="preview">
-          <img class="img-product-preview" src="./public/images/image-product-2-thumbnail.jpg" alt="product-preview">
+          <img
+            class="img-product-preview"
+            src="./public/images/image-product-2-thumbnail.jpg"
+            alt="product-preview"
+          />
         </div>
         <div class="preview">
-          <img class="img-product-preview" src="./public/images/image-product-3-thumbnail.jpg" alt="product-preview">
+          <img
+            class="img-product-preview"
+            src="./public/images/image-product-3-thumbnail.jpg"
+            alt="product-preview"
+          />
         </div>
         <div class="preview">
-          <img class="img-product-preview" src="./public/images/image-product-4-thumbnail.jpg" alt="product-preview">
+          <img
+            class="img-product-preview"
+            src="./public/images/image-product-4-thumbnail.jpg"
+            alt="product-preview"
+          />
         </div>
       </div>
       <div class="test count-products">
-          <div class="btn-count">
-            <button ><img id="minus"  src="./public/images/icon-minus.svg" alt=""></button>
-            <p>0</p>
-            <button><img  src="./public/images/icon-plus.svg" alt=""></button>
+        <div class="btn-count">
+          <div class="btn-control">
+            <div type="button" class="number-count btn-minus">
+              <img id="minus" src="./public/images/icon-minus.svg" alt="" />
+            </div>
+            <p class="number-count">0</p>
+            <div type="button" class="number-count btn-plus">
+              <img src="./public/images/icon-plus.svg" alt="" />
+            </div>
           </div>
-
-          <div></div>
+          <button class="btn-add">Add to car</button>
+        </div>
       </div>
     </div>
-    $125.00 50% $250.00 0 Add to cart
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Daniel Romero</a>.
     </div>
   </body>
 </html>
