@@ -6,14 +6,13 @@
 
 .nav-bar{
     /* background-color: brown; */
-    
     margin: 0 10%;
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
     align-items: center;
     border-bottom: solid 1px hsl(220, 14%, 90%);
-    
+   
 }
 
 .container-logo{
@@ -21,7 +20,10 @@
     width: 20%;
    order: 1;
 }
+#menu{
+    display: none;
 
+}
 .nav-sections{
     display: flex;
     /* background-color: yellow; */
@@ -106,7 +108,6 @@ a.sections:hover {
     color: hsl(26, 100%, 55%);
 }
 .product-presentation{
-
     /* background-color: aqua; */
     width: 100%;
     order: 0;
@@ -276,52 +277,65 @@ a.sections:hover {
 
 @media(max-width: 920px){
     body{
-        background-color: red;
+        /* background-color: red; */
+        font-size: 20px;
     }
+    .nav-bar{
+        background-color: white; 
+        margin:0;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+        justify-content: space-between;
+    }
+
     .nav-sections{
-        display: flex;
-        /* background-color: yellow; */
-        width: 10px;
-        align-items: center;
-        height: 100px;
-        order: 2;
+        display: none;
     }
 
-
+    #menu{
+        display: block;
+        margin: 0 30px;
+    }
 
     .main-container{
         background-color: #f0f0f0; 
-        display: block;
-        height: auto ;
-        width: 100%;
-        
+        display: block;        
         margin: 0 0;
     }
+
     .test{
-        background-color: blueviolet;
-        
-        max-width: none;
-        height: 50%;
-        /* margin-top: 10px;
-        padding: 5px; */
+        max-width: 100%;
     }
 
-    .product-presentation{
-
-        /* background-color: aqua; */
-        width: 100%;
-        order: 0;
+    .img-product {
+        /* height: 100%;
+        width: 100%; */
+        border-radius: 0px;
     }
 
-    .product-description{
-        background-color: blue;
-        display: flex;
-        flex-direction: column;
-        min-width: 100%;
-        align-items: flex-start;
-    }
     .count-products{
-       
-        min-width: 100%;
+        display: block;
+        height: 100px;
     }
+    .btn-count{
+    display: block;
+    }
+
+    .btn-count > *{
+        height: 50px;
+    }
+
+    .btn-add{
+        width: 90%;
+        margin: 10px 0;
+        margin-left: 5%;
+
+    }
+
+    .product-previews{
+        display: none;
+    }
+
+    
 }
