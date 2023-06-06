@@ -4,8 +4,11 @@
     font-weight: 400;
 }
 
+
+
 .nav-bar{
     /* background-color: brown; */
+    position: relative;
     margin: 0 10%;
     display: flex;
     flex-direction: row;
@@ -13,6 +16,58 @@
     align-items: center;
     border-bottom: solid 1px hsl(220, 14%, 90%);
    
+    
+}
+
+.div-float {
+    
+    background-color: hsl(223, 64%, 98%);
+    
+    border-radius: 12px;
+    position: absolute;
+    right: 5px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 250px; */
+    width: 25%;
+    height: 200px;
+    box-shadow: -1px -1px 34px 0px rgba(0,0,0,0.36);
+}
+
+.div-float p{
+    font-weight: 400;
+}
+
+.div-float > p{
+    margin: 0 20px;
+    font-weight: 700;
+    border-bottom: solid 1px hsl(220, 14%, 90%);
+}
+
+.car-description{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.car-description img{
+    border-radius: 5px;
+    width: 50px;
+    height: auto;
+    
+}
+.btn-checkout{
+    margin: 0 auto;
+    color: #f0f0f0;
+    background-color: hsl(26, 100%, 55%);
+    width: 90%;
+    /* min-width: %; */
+    height: 40px;
+    border-radius: 10px;
+    border: none;
 }
 
 .container-logo{
@@ -236,7 +291,7 @@ a.sections:hover {
 }
 
 .number-count{
-    
+    user-select: none;
     margin: auto 0;
 }
 
@@ -249,12 +304,12 @@ a.sections:hover {
     border-radius: 10px;
     border: none;
 }
-.btn-add:hover{
+.add .btn-add:hover{
     background-color: hsl(27,100%,71%);
 }
 #minus{
     margin: 2px 0px;
-    
+   
 }
 
 .btn-minus:hover, .btn-plus:hover{
