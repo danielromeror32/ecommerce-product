@@ -20,21 +20,24 @@
 }
 
 .div-float {
-    
     background-color: hsl(223, 64%, 98%);
-    
     border-radius: 12px;
     position: absolute;
-    right: 5px;
-    top: 100px;
+    right: 139px;
+    top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* width: 250px; */
     width: 25%;
-    height: 200px;
+    height: 220px;
     box-shadow: -1px -1px 34px 0px rgba(0,0,0,0.36);
 }
+.hidden {
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: opacity 1s, height 0.5s;
+  }
 
 .div-float p{
     font-weight: 400;
@@ -46,6 +49,7 @@
     border-bottom: solid 1px hsl(220, 14%, 90%);
 }
 
+
 .car-description{
     
     display: flex;
@@ -55,7 +59,7 @@
 
 .car-description img{
     border-radius: 5px;
-    width: 50px;
+    width: 60px;
     height: auto;
     
 }
@@ -65,11 +69,17 @@
     background-color: hsl(26, 100%, 55%);
     width: 90%;
     /* min-width: %; */
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
     border: none;
 }
+.btn-checkout:hover{
+    background-color: hsl(27,100%,71%);
+}
 
+.text-cart{
+    margin: 5px 0;
+}
 .container-logo{
     display: flex;
     width: 20%;
@@ -304,7 +314,7 @@ a.sections:hover {
     border-radius: 10px;
     border: none;
 }
-.add .btn-add:hover{
+.btn-add:hover{
     background-color: hsl(27,100%,71%);
 }
 #minus{
@@ -342,7 +352,42 @@ a.sections:hover {
         width: 100%;
         position: fixed;
         justify-content: space-between;
+        
     }
+
+    .div-float {
+        right:0px;
+        left: 0px;
+        margin: 0 auto;
+        top: 90px;
+        width: 96%;
+        height: 40%;
+        font-size: 20px;
+    }
+    /* .car-description{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } */
+    
+    .car-description img{
+        border-radius: 5px;
+        width: 80px;
+        height: auto;
+        
+    }
+    .btn-checkout{
+        margin: 0 auto;
+        color: #f0f0f0;
+        background-color: hsl(26, 100%, 55%);
+        width: 90%;
+        /* min-width: %; */
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+    }   
+
 
     .nav-sections{
         display: none;
@@ -354,7 +399,7 @@ a.sections:hover {
     }
 
     .main-container{
-        background-color: #f0f0f0; 
+        
         display: block;        
         margin: 0 0;
     }
